@@ -7,9 +7,9 @@
     </tr>
   </thead>
   <tbody>
-  <% Docker::Container.all.each do |c| %>
+  <% @containers.each do |c| %>
     <tr>
-      <td><%= c.id %></td>
+      <td><%= c.json["Config"]["Image"] %></td>
       <td>
         <%= link_to "Start", start_container_path(c.id) %>
         <%= link_to "Stop", stop_container_path(c.id) %>
