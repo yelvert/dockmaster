@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @build_template.name %>
+</p>
+
+<p>
+  <strong>From image:</strong>
+  <%= @build_template.from_image %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @build_template.body %>
+</p>
+
+<p>
+  <strong>Params:</strong>
+  <%= @build_template.params %>
+</p>
+
+<%= link_to 'Edit', edit_build_template_path(@build_template) %> |
+<%= link_to 'Back', build_templates_path %>

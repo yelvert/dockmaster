@@ -1,0 +1,33 @@
+<h1>Listing build_templates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>From image</th>
+      <th>Body</th>
+      <th>Params</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @build_templates.each do |build_template| %>
+      <tr>
+        <td><%= build_template.name %></td>
+        <td><%= build_template.from_image %></td>
+        <td><%= build_template.body %></td>
+        <td><%= build_template.params %></td>
+        <td><%= link_to 'Show', build_template %></td>
+        <td><%= link_to 'Edit', edit_build_template_path(build_template) %></td>
+        <td><%= link_to 'Destroy', build_template, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Build template', new_build_template_path %>

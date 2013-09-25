@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/yelvert/docker-api.git
+  revision: 75a70318983f45abe9d97edf9220c9036d63921c
+  specs:
+    docker-api (1.5.4)
+      archive-tar-minitar
+      excon (>= 0.22.0)
+      json
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,12 +45,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    docker-api (1.5.2)
-      archive-tar-minitar
-      excon (>= 0.22.0)
-      json
     erubis (2.7.0)
-    excon (0.25.3)
+    excon (0.26.0)
     execjs (2.0.1)
     hike (1.2.3)
     i18n (0.6.5)
@@ -115,7 +120,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  docker-api
+  docker-api!
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.0)

@@ -45,4 +45,4 @@ end
 # gem 'debugger', group: [:development, :test]
 
 # Docker API
-gem 'docker-api', require: 'docker'
+gem 'docker-api', require: 'docker', github: 'yelvert/docker-api'

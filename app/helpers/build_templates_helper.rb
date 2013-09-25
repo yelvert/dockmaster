@@ -1,0 +1,2 @@
+module BuildTemplatesHelper
+end
