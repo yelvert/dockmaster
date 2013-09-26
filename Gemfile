@@ -45,4 +45,5 @@ end
 # gem 'debugger', group: [:development, :test]
 
 # Docker API
-gem 'docker-api', require: 'docker', github: 'yelvert/docker-api'
+# gem 'docker-api', require: 'docker', github: 'yelvert/docker-api'
+gem 'docker-api', require: 'docker', path: '../docker-api'

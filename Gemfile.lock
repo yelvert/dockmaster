@@ -1,6 +1,5 @@
-GIT
-  remote: git://github.com/yelvert/docker-api.git
-  revision: 75a70318983f45abe9d97edf9220c9036d63921c
+PATH
+  remote: ../docker-api
   specs:
     docker-api (1.5.4)
       archive-tar-minitar
