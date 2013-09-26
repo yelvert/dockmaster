@@ -1,6 +1,10 @@
 class ImagesController < ApplicationController
   # List containers
   def index
-    @images = Docker::Image.all
+    @images = Image.all
+  end
+
+  def show
+    @image = Image.find params[:id]
   end
 end

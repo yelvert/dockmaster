@@ -1,0 +1,13 @@
+<h1>Image - <%= @image.name %></h1>
+
+<pre class="beautify">
+  <%= @image.show.to_json %>
+</pre>
+
+<% content_for :head do %>
+  <script type="text/javascript">
+    $(function() {
+      $('.beautify').beautify();
+    });
+  </script>
+<% end %>
