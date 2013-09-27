@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Images:</strong>
+  <br />
+  <ul>
+    <% @project.images.each do |image| %>
+      <li><%= link_to image.tag, project_image_path(@project, image.id) %></li>
+    <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
